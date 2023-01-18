@@ -18,3 +18,7 @@ def get_hue(brightness: float = 1.0) -> str:
         hue -= 1
     r, g, b = colorsys.hsv_to_rgb(hue, 1, brightness)
     return "#" + _i_to_h(r) + _i_to_h(g) + _i_to_h(b)
+
+
+if __name__ == "__main__":
+    print(get_hue())
