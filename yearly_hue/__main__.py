@@ -1,7 +1,7 @@
 """CLI for Yearly Hue."""
-from . import get_hue
 from argparse import ArgumentParser
 
+from . import get_hue
 
 ap = ArgumentParser()
 ap.add_argument("brightness", nargs='?', type=float, default=1)
