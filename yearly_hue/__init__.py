@@ -2,6 +2,8 @@
 import colorsys
 from datetime import datetime
 
+__version__ = '1.1.0'
+
 
 def _f_to_h(i: float) -> str:
     h = hex(int(i * 255))
