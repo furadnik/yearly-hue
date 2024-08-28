@@ -52,7 +52,6 @@ def get_min_contrast_to_white(color: Color, contrast: ContrastStandard) -> Color
     brightness = 0.5
     for i in range(2, 16):
         new_color = Color(color.hue, color.saturation, brightness)
-        print(brightness, get_white_contrast(new_color), new_color)
         if get_white_contrast(new_color) >= WHITE_MIN_CONTRAST[contrast]:
             brightness += 2**(-i)
         else:
