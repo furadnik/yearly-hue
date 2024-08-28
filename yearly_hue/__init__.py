@@ -21,7 +21,7 @@ def get_hue_from_dt() -> float:
     """Get hue based on the current datetime."""
     t = datetime.today()
     hue = (int(t.strftime("%j")) - 1 + (t.hour + (t.minute + t.second / 60) / 60) / 24) / 365
-    hue = (6 - hue + 0.6) + 0.5
+    hue = (6 - hue + 0.6)
     while hue > 1:
         hue -= 1
     return hue
