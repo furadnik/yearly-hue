@@ -41,7 +41,7 @@ def get_luminance(color: Color):
 
 def get_white_contrast(color: Color) -> float:
     """Get the contrast of `color` against white."""
-    return 1 / (get_luminance(color))
+    return 1 / (get_luminance(color) + 0.003)
 
 
 def get_min_contrast_to_white(color: Color, contrast: ContrastStandard) -> Color:
