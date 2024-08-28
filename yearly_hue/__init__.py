@@ -4,7 +4,7 @@ from datetime import datetime
 from .color import Color
 from .contrast import ContrastStandard, get_min_contrast_to_white
 
-__version__ = '1.2.0'
+__version__ = '1.3.0'
 
 
 def _f_to_h(i: float) -> str:
